@@ -1,9 +1,7 @@
-# EEG-Data-Augmentation-using-Variational-Autoencoder
-
-"Improving performance of motor imagery classification using Variational-Autoencoder and synthetic EEG signals".
+# Improving performance of motor imagery classification using Variational-Autoencoder and synthetic EEG signals.
 
 This repository contains the implementation of a variational autoencoder(VAE) for generating synthetic EEG signals. 
-The generated signals were used for motor imagery classification using the EEGNet architecture[1].
+The generated signals were used for motor imagery classification using the [EEGNet](https://www.researchgate.net/publication/310953136_EEGNet_A_Compact_Convolutional_Network_for_EEG-based_Brain-Computer_Interfaces) architecture.
 
 
 The primary goals were:
@@ -15,7 +13,6 @@ The primary goals were:
     
 
 
-![alt text](https://i.ibb.co/BKr7cVF/Picture1.png) 
 
 
 Four architecures/models were made keeping U-NET architecture as the base.
@@ -25,7 +22,11 @@ The models used are:
 - Attention U-NET
 - Residual Attention U-NET (RA-UNET)
 
-The performance metrics used for evaluation are accuracy and mean IoU.
+
+## Dataset
+The dataset is obtained from the [BCI Competition IV](http://www.bbci.de/competition/iv/#datasets) - Data sets 2a. It consists of 22 EEG channels signals of sampling rate 250Hz, from 9 subjects. The signals are of 0.5-100 Hz and are filtered with a notch filter. There are 4 classes of motor-imagery tasks .
+
+
 
 
 ## Methods
@@ -60,29 +61,20 @@ The following table compares the performance of various models
 | STARE        | Attention U-NET  | 0.893               |0.738        |
 | STARE        | RA-UNET          | 0.891               |0.733        |
 
-![alt text](https://i.ibb.co/W07sGYv/Picture3.png)
 
 
 
-### Datasets
-The datasets of the fundus images can be acquired from:
-1. [HRF](https://www5.cs.fau.de/research/data/fundus-images/)
-2. [DRIVE](http://www.isi.uu.nl/Research/Databases/DRIVE/)
-3. [STARE](https://cecas.clemson.edu/~ahoover/stare/)
 
-The base project provided was to explore datasets collected from electroencephalography (EEG). The data is obtained from the BCI Competition IV, Data sets 2a. It consists of 22 EEG channels from 9 subjects performing 4 motor-imagery tasks. A more complete description of the data is available here: BCI Competition 2008 – Graz data set A.
 
-The trained models are present in `Trained models` folder.
 
 
 
 ## References
 
-[1] 
+1. Lawhern, Vernon & Solon, Amelia & Waytowich, Nicholas & Gordon, Stephen & Hung, Chou & Lance, Brent. (2016). EEGNet: A Compact Convolutional Network for EEG-based Brain-Computer Interfaces. Journal of Neural Engineering. 15. 10.1088/1741-2552/aace8c. 
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
-
 
 
