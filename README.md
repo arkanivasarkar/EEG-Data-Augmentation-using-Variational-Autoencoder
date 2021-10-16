@@ -46,20 +46,14 @@ Out of all the models, Attention U-NET achieved a greater segmentation performan
 
 The following table compares the performance of various models
 
-| **Datasets** |    **Models**    | **Average Accuracy**| **Mean IoU**|
-|:------------:|:----------------:|:-------------------:|:-----------:|
-| HRF          | Simple U-NET     | 0.965               |0.854        |
-| HRF          | Res-UNET         | 0.964               |0.854        |
-| HRF          | Attention U-NET  | 0.966               |0.857        |
-| HRF          | RA-UNET          | 0.963               |0.85         |
-| DRIVE        | Simple U-NET     | 0.9                 |0.736        |
-| DRIVE        | Res-UNET         | 0.903               |0.741        |
-| DRIVE        | Attention U-NET  | 0.905               |0.745        |
-| DRIVE        | RA-UNET          | 0.9                 |0.735        |
-| STARE        | Simple U-NET     | 0.882               |0.719        |
-| STARE        | Res-UNET         | 0.893               |0.737        |
-| STARE        | Attention U-NET  | 0.893               |0.738        |
-| STARE        | RA-UNET          | 0.891               |0.733        |
+|              | **Precision** | **recall** | **f1-score** | **Support** |
+|:------------:|:-------------:|:----------:|:------------:|:-----------:|
+| 0            | 0.81          | 0.74       | 0.78         | 125         |
+| 1            | 0.70          | 0.81       | 0.75         | 118         |
+| 2            | 0.64          | 0.68       | 0.66         | 111         |
+| 3            | 0.80          | 0.68       | 0.74         | 107         |
+
+**Accuracy :** 0.73
 
 
 
