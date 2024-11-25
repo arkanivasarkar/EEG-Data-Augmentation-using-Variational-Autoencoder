@@ -1,6 +1,7 @@
 # EEG Data Augmentation using Variational Autoencoder 
 
 This repository contains the implementation of a variational autoencoder (VAE) for generating synthetic EEG signals, and investigating how the generated signals can affect the performance of motor imagery classification. 
+
 It is referred by the literature - Ahuja, C., & Sethia, D. (2024). Harnessing Few-Shot Learning for EEG signal classification: a survey of state-of-the-art techniques and future directions. Frontiers in human neuroscience, 18, 1421922. https://doi.org/10.3389/fnhum.2024.1421922
 </br>
 
